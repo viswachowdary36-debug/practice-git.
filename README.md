@@ -1,6 +1,6 @@
 # Tiny Task Tracker
 
-A small, dependency-free task tracker you can run in any modern browser. Add tasks, mark them complete, filter the list, and come back later without losing your tasks.
+A small, dependency-free task tracker you can run in any modern browser. It starts with a `vvv` task. Add tasks, mark them complete, filter the list, and come back later without losing your tasks.
 
 ## Run it
 

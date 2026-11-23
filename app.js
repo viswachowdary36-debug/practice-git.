@@ -11,7 +11,12 @@ let activeFilter = "all";
 
 function loadTasks() {
   try {
-    const savedTasks = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+    const savedValue = localStorage.getItem(STORAGE_KEY);
+    if (savedValue === null) {
+      return [{ id: "starter-vvv", text: "vvv", completed: false }];
+    }
+
+    const savedTasks = JSON.parse(savedValue);
     return Array.isArray(savedTasks)
       ? savedTasks.filter(
           (task) =>
