@@ -44,6 +44,7 @@ function renderTasks() {
   const visibleTasks = tasks.filter((task) => {
     if (activeFilter === "active") return !task.completed;
     if (activeFilter === "completed") return task.completed;
+    if (activeFilter === "vvv") return task.text.toLowerCase().includes("vvv");
     return true;
   });
 
